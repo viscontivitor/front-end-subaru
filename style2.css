@@ -1,0 +1,176 @@
+@import url(reset.css);
+#container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "banner" "main" "footer";
+    grid-row-gap:1.1%;
+}
+.box-son{
+    width:100%;
+    min-height:100px;
+  
+}
+#container header{
+    grid-area:header;
+    position:sticky;
+    top: 0;
+    z-index: 90;
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    box-shadow: 1px 5px 50px #555;
+    display: flex;   
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    height:160px;
+}
+header .left{
+    width:35%;
+}
+header .slide-nav ul{
+    display:flex;
+}
+header .slide-nav ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+a:link{
+    color: #4b4b50;
+    text-decoration:none;
+}
+a:hover{
+    color: #000;
+}
+header #logo{
+    width:30%;
+    margin:10px 2.5%;
+}    
+header #logo h1{
+    display:block;
+    width:405px;
+    height:227px;
+    padding:10px;
+    background:url(../img/subaru.png) no-repeat center center; 
+    background-size:200px;
+    margin-left:-130px;
+    margin-top:-70px;
+}
+header #logo h1 span{display:none}
+header .right{
+    width:35%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+#lang-box{
+    width:35px;
+    position: relative;
+    right: 0px;
+    margin: 20px 0 px;
+}
+#lang-box .bnt-success{
+    position: relative;
+    right:-260px;
+    margin-top:10px;
+}
+.bnt-success{
+    width:100px;
+    height:40px;
+    background: #444;
+    box-shadow: 1px 5px 50px #444;
+    border: 1px solid #444;
+    border-radius:23px;
+    
+}
+.bnt-success:hover{
+    background:#ccc;
+    box-shadow: 1px 5px 50px #ccc;
+}
+#search-box{
+    position:relative;
+    right:5px;
+    margin: 20px 0px;
+    right:-130px;
+}
+#search{
+    height:40px;
+    width:150px;
+}
+header .nav-ico ul{
+    display:flex;
+}
+header .nav-ico ul li{
+    list-style-type:none;
+    padding:10px;
+}
+#container .banner{
+    grid-area: banner;
+    height:1000px;
+    
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../img/background.jpg);
+    background-size:100%;
+    z-index: 9;
+    
+}
+#container main{
+    grid-area: main;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 10;
+    margin-top: 500px; 
+}
+
+.category{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.category .content{
+    width:31.5%;
+    background: rgb(192, 176, 176);
+    margin-bottom: 20px;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.category .content div{
+    widows: 50%;
+    min-height:100px;
+}
+#container footer{
+    grid-area:footer;
+    z-index: 10;
+    background: #f00;
+}
+.content img{
+    margin-left:15px;
+    margin-top:10px;
+}
+.content p{
+    margin-left: 300px;
+    margin-top: -255px;
+}
+.buttons{
+    margin-left:-230px;
+    margin-top: 10px;
+}
+#saibamais{
+    margin-top:-40px;
+    margin-left:135px;
+}
+
+/*Configurando o logotipo de h1*/
+header #logo{
+    width:10%;
+    margin:10px 2.5%;
+}
